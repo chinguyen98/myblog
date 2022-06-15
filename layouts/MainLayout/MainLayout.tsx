@@ -7,7 +7,7 @@ type MainLayoutProps = {
 
 const MainLayout = ({ children }: MainLayoutProps): JSX.Element => {
   return (
-    <div className="bg-gray-400 w-screen h-screen">
+    <div className="bg-sky-50 dark:bg-slate-600 w-screen h-screen">
       <Navbar />
       {children}
     </div>
