@@ -1,4 +1,5 @@
-import ToggleDarkMode from './components/ToggleDarkMode';
+import dynamic from 'next/dynamic';
+const ToggleDarkMode = dynamic(() => import('./components/ToggleDarkMode'), { ssr: false });
 
 const Navbar = (): JSX.Element => {
   return (

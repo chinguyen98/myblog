@@ -4,7 +4,7 @@ import { useTheme } from 'next-themes';
 const ToggleDarkMode = (): JSX.Element => {
   const { theme, systemTheme, setTheme } = useTheme();
 
-  const currentTheme = theme === 'system' ? systemTheme : theme;
+  const currentTheme: string | undefined = theme === 'system' ? systemTheme : theme;
 
   if (currentTheme === 'dark') {
     return (
@@ -12,7 +12,7 @@ const ToggleDarkMode = (): JSX.Element => {
         onClick={() => {
           setTheme('light');
         }}
-        className="w-10 h-10 text-yellow-500"
+        className="w-10 h-10 text-yellow-500 hover:cursor-pointer"
       />
     );
   }
@@ -22,7 +22,7 @@ const ToggleDarkMode = (): JSX.Element => {
       onClick={() => {
         setTheme('dark');
       }}
-      className="w-10 h-10 text-gray-900"
+      className="w-10 h-10 text-gray-900 hover:cursor-pointer"
     />
   );
 };
