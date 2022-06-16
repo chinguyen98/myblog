@@ -1,11 +1,8 @@
-import { Html, Head, Main, NextScript } from 'next/document';
-import { useEffect, useState } from 'react';
+import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
-
   return (
-    <Html className={isDarkMode ? 'dark' : ''}>
+    <Html>
       <Head />
       <body>
         <Main />
