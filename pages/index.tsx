@@ -1,5 +1,6 @@
 import type { GetStaticProps, NextPage } from 'next';
 import MainLayout from '../layouts/MainLayout';
+import { getAllPosts } from '../libs/api';
 import Post from '../models/Post';
 
 type HomePageProps = {
@@ -15,6 +16,8 @@ const Home: NextPage<HomePageProps> = ({}): JSX.Element => {
 };
 
 export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
+  const posts = getAllPosts(['title', 'date', 'slug', 'author', 'coverImage', 'excerpt']);
+
   return {
     props: {
       posts: [],
