@@ -1,12 +1,25 @@
-import type { NextPage } from 'next';
+import type { GetStaticProps, NextPage } from 'next';
 import MainLayout from '../layouts/MainLayout';
+import Post from '../models/Post';
 
-const Home: NextPage = () => {
+type HomePageProps = {
+  posts: Post[];
+};
+
+const Home: NextPage<HomePageProps> = ({}): JSX.Element => {
   return (
     <MainLayout>
-      <div className="text-2xl font-bold underline text-black dark:text-white">This is MyBlog</div>
+      <div className="text-2xl font-bold text-black dark:text-white">colimaiBlog</div>
     </MainLayout>
   );
+};
+
+export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
+  return {
+    props: {
+      posts: [],
+    },
+  };
 };
 
 export default Home;
