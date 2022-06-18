@@ -1,4 +1,5 @@
 import type { GetStaticProps, NextPage } from 'next';
+import PreviewPost from '../components/PreviewPost';
 import MainLayout from '../layouts/MainLayout';
 import { getAllPosts } from '../libs/api';
 import Post from '../models/Post';
@@ -10,10 +11,12 @@ type HomePageProps = {
 const Home: NextPage<HomePageProps> = ({ posts }): JSX.Element => {
   return (
     <MainLayout>
-      <div className="text-2xl font-bold text-black dark:text-white">colimaiBlog</div>
-      {posts.map((post) => (
-        <div key={post.slug}>{post.title}</div>
-      ))}
+      <div className="text-2xl font-bold text-black dark:text-white my-5">colimaiBlog</div>
+      <div className="grid grid-cols-4 gap-4bg-yellow-400">
+        {posts.map((post) => (
+          <PreviewPost key={post.slug} title={post.title!} />
+        ))}
+      </div>
     </MainLayout>
   );
 };
