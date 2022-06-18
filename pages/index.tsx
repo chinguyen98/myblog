@@ -14,7 +14,7 @@ const Home: NextPage<HomePageProps> = ({ posts }): JSX.Element => {
       <div className="text-2xl font-bold text-black dark:text-white my-5">colimaiBlog</div>
       <div className="grid grid-cols-4 gap-4bg-yellow-400">
         {posts.map((post) => (
-          <PreviewPost key={post.slug} title={post.title!} />
+          <PreviewPost key={post.slug} title={post.title!} previewImage={post.image?.preview!} />
         ))}
       </div>
     </MainLayout>
@@ -22,7 +22,7 @@ const Home: NextPage<HomePageProps> = ({ posts }): JSX.Element => {
 };
 
 export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
-  const posts: Post[] = getAllPosts(['title', 'date', 'slug', 'author', 'coverImage', 'excerpt']);
+  const posts: Post[] = getAllPosts(['title', 'date', 'slug', 'image', 'excerpt']);
 
   return {
     props: {
