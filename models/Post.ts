@@ -7,6 +7,7 @@ type Post = {
   image?: {
     cover?: string;
     preview?: string;
+    og?: string;
   };
 };
 

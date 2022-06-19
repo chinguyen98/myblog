@@ -1,13 +1,22 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import { useRouter } from 'next/router';
 import { ParsedUrlQuery } from 'querystring';
 import { getAllPosts, getPostBySlug } from '../../libs/api';
+import markdownToHtml from '../../libs/markdownToHtml';
 import Post from '../../models/Post';
+import ErrorPage from 'next/error';
 
 type PostPageProps = {
   post: Post;
 };
 
-const PostPage: NextPage<PostPageProps> = ({}) => {
+const PostPage: NextPage<PostPageProps> = ({ post }) => {
+  const router = useRouter();
+
+  if (!router.isFallback && !post.slug) {
+    return <ErrorPage statusCode={404} />;
+  }
+
   return <></>;
 };
 
@@ -18,17 +27,22 @@ interface IParams extends ParsedUrlQuery {
 export const getStaticProps: GetStaticProps<PostPageProps> = async ({ params }) => {
   const { slug } = params as IParams;
 
-  const post: Post = getPostBySlug(slug, ['title', 'date', 'slug', 'image', 'excerpt']);
+  const post: Post = getPostBySlug(slug, ['title', 'date', 'slug', 'image', 'excerpt', 'content']);
+
+  const content = await markdownToHtml(post.content || '');
 
   return {
     props: {
-      post,
+      post: {
+        ...post,
+        content,
+      },
     },
   };
 };
 
 export const getStaticPaths: GetStaticPaths<IParams> = async () => {
-  const posts: Post[] = getAllPosts(['title', 'date', 'slug', 'image', 'excerpt']);
+  const posts: Post[] = getAllPosts(['slug']);
 
   return {
     paths: posts.map((post: Post) => ({

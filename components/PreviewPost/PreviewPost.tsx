@@ -8,8 +8,6 @@ type PreviewPostProps = {
 };
 
 function PreviewPost({ title, previewImage, slug }: PreviewPostProps): JSX.Element {
-  console.log({ previewImage });
-
   return (
     <Link href={`/posts/${slug}`}>
       <a className="flex flex-col justify-center items-center">

@@ -5,6 +5,7 @@ date: 1655524439
 image:
   preview: '/assets/blogs/preview/testNextJS.png'
   cover: '/assets/blogs/cover/testNextJS.png'
+  og: '/assets/blogs/cover/testNextJS.png'
 ---
 
-# Hello
+# Hello!
