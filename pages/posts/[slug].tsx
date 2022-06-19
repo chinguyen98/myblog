@@ -5,6 +5,7 @@ import { getAllPosts, getPostBySlug } from '../../libs/api';
 import markdownToHtml from '../../libs/markdownToHtml';
 import Post from '../../models/Post';
 import ErrorPage from 'next/error';
+import Head from 'next/head';
 
 type PostPageProps = {
   post: Post;
@@ -17,7 +18,20 @@ const PostPage: NextPage<PostPageProps> = ({ post }) => {
     return <ErrorPage statusCode={404} />;
   }
 
-  return <></>;
+  return (
+    <>
+      {router.isFallback ? (
+        <>Loading.....!</>
+      ) : (
+        <>
+          <Head>
+            <title>{post.title || 'coliamaiBlog'}</title>
+            <meta property="og:image" content={post.image?.og} key="og" />
+          </Head>
+        </>
+      )}
+    </>
+  );
 };
 
 interface IParams extends ParsedUrlQuery {
