@@ -6,6 +6,7 @@ import markdownToHtml from '../../libs/markdownToHtml';
 import Post from '../../models/Post';
 import ErrorPage from 'next/error';
 import Head from 'next/head';
+import PostHeader from '../../components/PostPage/PostHeader';
 
 type PostPageProps = {
   post: Post;
@@ -28,6 +29,7 @@ const PostPage: NextPage<PostPageProps> = ({ post }) => {
             <title>{post.title || 'coliamaiBlog'}</title>
             <meta property="og:image" content={post.image?.og} key="og" />
           </Head>
+          <PostHeader date={post.date!} title={post.title!} />
         </>
       )}
     </>
