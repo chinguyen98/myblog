@@ -7,6 +7,7 @@ import Post from '../../models/Post';
 import ErrorPage from 'next/error';
 import Head from 'next/head';
 import PostHeader from '../../components/PostPage/PostHeader';
+import PostContent from '../../components/PostPage/PostContent';
 
 type PostPageProps = {
   post: Post;
@@ -30,6 +31,7 @@ const PostPage: NextPage<PostPageProps> = ({ post }) => {
             <meta property="og:image" content={post.image?.og} key="og" />
           </Head>
           <PostHeader date={post.date!} title={post.title!} coverImg={post.image?.cover!} />
+          <PostContent content={post.content!} />
         </>
       )}
     </>
