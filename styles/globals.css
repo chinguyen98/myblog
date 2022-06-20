@@ -18,3 +18,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+}
