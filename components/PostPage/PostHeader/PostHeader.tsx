@@ -1,12 +1,14 @@
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { getDisplayTime } from '../../../libs/datetime';
 
 type PostHeaderProps = {
   title: string;
   date: number;
+  coverImg: string;
 };
 
-const PostHeader = ({ date, title }: PostHeaderProps): JSX.Element => {
+const PostHeader = ({ date, title, coverImg }: PostHeaderProps): JSX.Element => {
   const [displayTime, setDisplayTime] = useState<any | null>(null);
 
   useEffect(() => {
@@ -15,8 +17,13 @@ const PostHeader = ({ date, title }: PostHeaderProps): JSX.Element => {
 
   return (
     <div>
-      <h1 className="text-4xl mb-2">{title}</h1>
-      <h5>{displayTime}</h5>
+      <div>
+        <h1 className="text-4xl mb-2">{title}</h1>
+        <h5>{displayTime}</h5>
+      </div>
+      <div className="w-full flex justify-center mt-3">
+        <Image src={coverImg} objectFit={'cover'} width={700} height={350} alt={title} />
+      </div>
     </div>
   );
 };

@@ -4,8 +4,8 @@ excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 date: 1655524439
 image:
   preview: '/assets/blogs/preview/testNextJS.png'
-  cover: '/assets/blogs/cover/testNextJS.png'
-  og: '/assets/blogs/cover/testNextJS.png'
+  cover: '/assets/blogs/preview/testNextJS.png'
+  og: '/assets/blogs/preview/testNextJS.png'
 ---
 
 # Hello!
