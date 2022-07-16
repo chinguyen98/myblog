@@ -47,14 +47,9 @@ export const getStaticProps: GetStaticProps<PostPageProps> = async ({ params }) 
 
   const post: Post = getPostBySlug(slug, ['title', 'date', 'slug', 'image', 'excerpt', 'content']);
 
-  const content = await markdownToHtml(post.content || '');
-
   return {
     props: {
-      post: {
-        ...post,
-        content,
-      },
+      post,
     },
   };
 };
