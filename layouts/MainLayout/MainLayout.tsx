@@ -10,9 +10,9 @@ const MainLayout = ({ children }: MainLayoutProps): JSX.Element => {
   return (
     <>
       <Meta />
-      <div className="bg-sky-50 dark:bg-slate-600 w-screen h-screen">
+      <div className="w-full">
         <Navbar />
-        <div className="container mx-auto p-5">{children}</div>
+        <>{children}</>
       </div>
     </>
   );
