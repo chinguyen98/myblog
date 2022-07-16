@@ -5,7 +5,11 @@ type PostContentProps = {
 };
 
 const PostContent = ({ content }: PostContentProps): JSX.Element => {
-  return <MarkdownRenderer content={content} />;
+  return (
+    <div className="p-16">
+      <MarkdownRenderer content={content} />
+    </div>
+  );
 };
 
 export default PostContent;
