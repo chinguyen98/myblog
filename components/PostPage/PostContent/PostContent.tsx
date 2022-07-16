@@ -1,13 +1,11 @@
+import MarkdownRenderer from '../../MarkdownRenderer';
+
 type PostContentProps = {
   content: string;
 };
 
 const PostContent = ({ content }: PostContentProps): JSX.Element => {
-  return (
-    <>
-      <div>{content}</div>
-    </>
-  );
+  return <MarkdownRenderer content={content} />;
 };
 
 export default PostContent;

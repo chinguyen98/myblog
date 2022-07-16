@@ -6,6 +6,8 @@ image:
   preview: '/assets/blogs/preview/testNextJS.png'
   cover: '/assets/blogs/preview/testNextJS.png'
   og: '/assets/blogs/preview/testNextJS.png'
+tags:
+  - test
 ---
 
 # Hello!
