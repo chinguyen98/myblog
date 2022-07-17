@@ -1,5 +1,5 @@
 ---
-title: 'Hoa tử đinh hương'
+title: 'Hoa tử đinh hương (Lilac)'
 excerpt: 'Tử đinh hương tím là biểu hiện của những cảm xúc thú vị, choáng ngợp khi mối tình đầu bộc lộ một cách e lệ và thơ mộng'
 date: 1657947296
 image:
@@ -15,7 +15,7 @@ Hoa tử đinh hương (Lilac) thuộc nhóm Syringa, trong tiếng Hy Lạp có
 
 Ngạn ngữ cổ có câu: “Cô gái nào cầm hoa Tử đinh hương sẽ không bao giờ được mang nhẫn cưới”, có lẻ từ xưa, Tử đinh hương được coi như là bông hoa của xui rủi và bệnh tật, có lẽ người ta liên tưởng tới màu tím u buồn của nó.
 
-Ngày nay hoa tử đinh hương có ý nghĩa xúc cảm đầu tiên của tình yêu. Những bó hoa thơm nở rộ, tử đinh hương tím khó lòng thoát khỏi sự chiêm ngưỡng ca tụng của các nhà thơ và những kẻ yêu nhau. Tử đinh hương tím là biểu hiện của những cảm xúc thú vị, choáng ngợp khi mối tình đầu bộc lộ một cách e lệ và thơ mộng Thông điệp của nó là “The longer I’m close to you, the more I love you”. Tử đinh hương yếu đuối và mong manh, nhưng một khi nó đã nở hoa, hoa của nó sẽ mãi mãi in sâu trong trái tim của những người nhìn thấy.
+Ngày nay hoa tử đinh hương có ý nghĩa xúc cảm đầu tiên của tình yêu. Những bó hoa thơm nở rộ, tử đinh hương tím khó lòng thoát khỏi sự chiêm ngưỡng ca tụng của các nhà thơ và những kẻ yêu nhau. Tử đinh hương tím là biểu hiện của những cảm xúc thú vị, choáng ngợp khi mối tình đầu bộc lộ một cách e lệ và thơ mộng. Thông điệp của nó là “The longer I’m close to you, the more I love you”. Tử đinh hương yếu đuối và mong manh, nhưng một khi nó đã nở hoa, hoa của nó sẽ mãi mãi in sâu trong trái tim của những người nhìn thấy.
 
 ![Umisaki Lilac](/assets/contents/lilac/umisaki-lilac-1.webp)
 ![Umisaki Lilac](/assets/contents/lilac/umisaki-lilac-2.webp)
