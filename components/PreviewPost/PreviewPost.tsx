@@ -9,7 +9,7 @@ type PreviewPostProps = {
 
 function PreviewPost({ title, previewImage, slug }: PreviewPostProps): JSX.Element {
   return (
-    <Link href={`/posts/${slug}`}>
+    <Link scroll={false} href={`/posts/${slug}`}>
       <a className="flex flex-col justify-center items-center">
         <Image src={`${previewImage}`} objectFit="contain" width={300} height={200} alt={title} />
         <div>{title}</div>
