@@ -17,5 +17,7 @@ Ngạn ngữ cổ có câu: “Cô gái nào cầm hoa Tử đinh hương sẽ k
 
 Ngày nay hoa tử đinh hương có ý nghĩa xúc cảm đầu tiên của tình yêu. Những bó hoa thơm nở rộ, tử đinh hương tím khó lòng thoát khỏi sự chiêm ngưỡng ca tụng của các nhà thơ và những kẻ yêu nhau. Tử đinh hương tím là biểu hiện của những cảm xúc thú vị, choáng ngợp khi mối tình đầu bộc lộ một cách e lệ và thơ mộng Thông điệp của nó là “The longer I’m close to you, the more I love you”. Tử đinh hương yếu đuối và mong manh, nhưng một khi nó đã nở hoa, hoa của nó sẽ mãi mãi in sâu trong trái tim của những người nhìn thấy.
 
-![Demo](/assets/contents/lilac/umisaki-lilac-1.webp)
-![Demo](/assets/contents/lilac/umisaki-lilac-2.webp)
+![Umisaki Lilac](/assets/contents/lilac/umisaki-lilac-1.webp)
+![Umisaki Lilac](/assets/contents/lilac/umisaki-lilac-2.webp)
+![Umisaki Lilac](/assets/contents/lilac/umisaki-lilac-3.webp)
+![Umisaki Lilac](/assets/contents/lilac/umisaki-lilac-4.webp)

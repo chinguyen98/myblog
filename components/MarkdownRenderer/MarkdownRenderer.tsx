@@ -12,7 +12,7 @@ const MarkdownRenderer = ({ content }: MarkdownRendererProps): JSX.Element => {
       remarkPlugins={[[remarkGfm, { singleTilde: false }]]}
       components={{
         img: ({ className, src, alt }) => (
-          <Image className={className} src={src!} alt={alt} width={1000} height={450} />
+          <Image className={className} src={src!} alt={alt} width={1000} height={550} />
         ),
       }}
     >
