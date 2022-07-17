@@ -16,7 +16,7 @@ const PostHeader = ({ date, title, coverImg }: PostHeaderProps): JSX.Element => 
   }, [date]);
 
   return (
-    <div className="w-full p-5 font-bold">
+    <div className="w-full px-32 py-2 font-bold">
       <div>
         <h1 className="text-4xl mb-2">{title}</h1>
         <h5>{displayTime}</h5>
